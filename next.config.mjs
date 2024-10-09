@@ -7,8 +7,6 @@ const nextConfig = {
     eslint: {
         ignoreDuringBuilds: true,
     },
-    basePath: '/portfolio',
-    assetPrefix: '/portfolio/',
 };
 
 export default nextConfig;
