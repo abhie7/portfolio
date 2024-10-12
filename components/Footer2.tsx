@@ -57,8 +57,10 @@ export function Footer() {
 
         emailjs
             .send(
-                process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID || '',
-                process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID || '',
+                process.env.NEXT_PRIVATE_EMAILJS_SERVICE_ID ||
+                    'service_f1dxywu',
+                process.env.NEXT_PRIVATE_EMAILJS_TEMPLATE_ID ||
+                    'template_h7t7l58',
                 {
                     from_name: form.name,
                     to_name: 'Abhiraj Chaudhuri',
@@ -66,7 +68,7 @@ export function Footer() {
                     to_email: 'abhirajchaudhuri@gmail.com',
                     message: form.message,
                 },
-                process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY || ''
+                'F7_jMMukR6_DY7j4-'
             )
 
             .then(
