@@ -3,7 +3,7 @@ import React from 'react';
 import { Spotlight } from './ui/Spotlight';
 import { TextGenerateEffect } from './ui/TextGenerateEffect';
 import MagicButton from './ui/MagicButton';
-import { FaLocationArrow } from 'react-icons/fa6';
+import { FaAngleDown } from 'react-icons/fa6';
 
 const Hero = () => {
     return (
@@ -41,16 +41,16 @@ const Hero = () => {
                     />
 
                     <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>
-                        Hello! I’m an aspiring AI/ML Engineer from India with a
-                        flair for building innovative AI solutions that address
-                        real-world problems. I bring creativity, precision, and
-                        a results-driven approach to every project I undertake.{' '}
+                        Hello! I’m an AI/ML Engineer from India with a flair for
+                        building AI solutions that address real-world problems.
+                        I bring creativity, precision, and a results-driven
+                        approach to every project I undertake.{' '}
                     </p>
 
                     <a href='#projects'>
                         <MagicButton
                             title='View My Projects'
-                            icon={<FaLocationArrow />}
+                            icon={<FaAngleDown />}
                             position='right'
                         />
                     </a>

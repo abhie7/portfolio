@@ -5,6 +5,70 @@ export const navItems = [
     { name: 'Contact', link: '#contact' },
 ];
 
+export const allSkills = [
+    {
+        domain: 'Programming Languages',
+        skills: ['Python', 'JavaScript', 'Java', 'C#'],
+    },
+    {
+        domain: 'AI/ML',
+        skills: [
+            'PyTorch',
+            'Scikit-learn',
+            'Natural Language Processing (NLP)',
+            'Transformers',
+            'Neural Networks',
+            'Model Fine-Tuning',
+            'Agents',
+            'Retrieval-Augmented Generation (RAG)',
+            'Chatbot Development',
+        ],
+    },
+    {
+        domain: 'Data Science & Analysis',
+        skills: [
+            'NumPy',
+            'Pandas',
+            'Matplotlib',
+            'Seaborn',
+            'Data Visualization',
+            'Data Wrangling',
+            'Web Scraping',
+        ],
+    },
+    {
+        domain: 'Databases',
+        skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Neo4J'],
+    },
+    {
+        domain: 'Vector Databases',
+        skills: ['Pinecone', 'Faiss', 'ChromaDB', 'Milvus'],
+    },
+    {
+        domain: 'Backend Technologies',
+        skills: ['Flask', 'Django', 'Node.js'],
+    },
+    {
+        domain: 'Frontend Technologies',
+        skills: ['JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Tailwind'],
+    },
+    {
+        domain: 'Developer Tools & Version Control',
+        skills: [
+            'Git',
+            'GitHub',
+            'Amazon Web Services (AWS)',
+            'Selenium',
+            'Puppeteer',
+        ],
+    },
+    {
+        domain: 'Design Tools',
+        skills: ['Figma', 'Adobe Photoshop', 'Adobe Illustrator'],
+    },
+    // Add more domains and skills as needed
+];
+
 export const gridItems = [
     {
         id: 1,
@@ -25,12 +89,16 @@ export const gridItems = [
         titleClassName: 'justify-start',
         img: '',
         spareImg: '',
+        style: {
+            zIndex: 9999,
+            userSelect: 'none',
+        },
     },
     {
         id: 3,
-        title: 'My tech stack',
-        description: 'I constantly try to improve',
-        className: 'lg:col-span-2 md:col-span-3 md:row-span-2',
+        title: 'My Tech Stack',
+        description: 'Click to view my',
+        className: 'lg:col-span-2 md:col-span-3 md:row-span-2 cursor-pointer',
         imgClassName: '',
         titleClassName: 'justify-center',
         img: '',
@@ -152,8 +220,15 @@ export const companies = [
 export const workExperience = [
     {
         id: 1,
-        title: 'AI/ML Intern - Alois Solutions',
-        desc: 'Vadodara, Gujarat, India<br /><br /><li>Developed tools to automate resume summarization and lead generations, improving recruitment workflow efficiency.</li><li>Built an Agentic Chatbot using RAG for job search assistance, gaining hands-on experience in NLP and machine learning.</li><li>Finetuned LLMs for Feature Extraction and Classification.</li>',
+        title: 'AI/ML Intern',
+        companyName: 'ALOIS Solutions',
+        loc: 'Vadodara, Gujarat, India',
+        duration: 'May 2024 - Present',
+        points: [
+            'Developed tools to automate document summarization and lead generations, improving recruitment workflow efficiency.',
+            'Built Agentic Chatbots using Retriecal Augmented Generation (RAG) for job search assistance, gaining hands-on experience in NLP and machine learning.',
+            'Finetuned LLMs for Feature Extraction and Classification.',
+        ],
         className: 'md:col-span-2',
         thumbnail: '/exp1.svg',
     },

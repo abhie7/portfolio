@@ -87,3 +87,23 @@
         background: linear-gradient(90deg, #161a31 0%, #06091f 100%);
     }
 }
+
+/* Custom scrollbar styles */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f100;
+    margin-right: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #161a31;
+    border-radius: 10px;
+    width: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #1f2442;
+}
