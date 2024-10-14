@@ -1,3 +1,52 @@
+import {
+    FaPython,
+    FaJs,
+    FaJava,
+    FaDatabase,
+    FaNodeJs,
+    FaHtml5,
+    FaCss3Alt,
+    FaGit,
+    FaAws,
+    FaFigma,
+    FaReact,
+} from 'react-icons/fa';
+import {
+    SiCsharp,
+    SiPytorch,
+    SiScikitlearn,
+    SiNumpy,
+    SiPandas,
+    SiMongodb,
+    SiPostgresql,
+    SiNeo4J,
+    SiFlask,
+    SiDjango,
+    SiBootstrap,
+    SiTailwindcss,
+    SiGithub,
+    SiSelenium,
+    SiPuppeteer,
+    SiAdobephotoshop,
+    SiAdobeillustrator,
+    SiPowerbi,
+    SiAmazonec2,
+    SiAmazons3,
+    SiAmazoniam,
+    SiAmazoncloudwatch,
+    SiPlaywright,
+    SiSketch,
+    SiAdobexd,
+    SiFastapi,
+    SiGitlab,
+    SiElasticsearch,
+    SiExpress,
+    SiMeta,
+    SiLangchain,
+} from 'react-icons/si';
+import { GrMysql } from 'react-icons/gr';
+import { LuSoup } from 'react-icons/lu';
+
 export const navItems = [
     { name: 'About', link: '#about' },
     { name: 'Projects', link: '#projects' },
@@ -5,66 +54,118 @@ export const navItems = [
     { name: 'Contact', link: '#contact' },
 ];
 
-export const allSkills = [
+export const getAllSkills = () => [
     {
         domain: 'Programming Languages',
-        skills: ['Python', 'JavaScript', 'Java', 'C#'],
-    },
-    {
-        domain: 'AI/ML',
         skills: [
-            'PyTorch',
-            'Scikit-learn',
-            'Natural Language Processing (NLP)',
-            'Transformers',
-            'Neural Networks',
-            'Model Fine-Tuning',
-            'Agents',
-            'Retrieval-Augmented Generation (RAG)',
-            'Chatbot Development',
+            { name: 'Python', icon: FaPython },
+            { name: 'JavaScript', icon: FaJs },
+            { name: 'Java', icon: FaJava },
+            { name: 'C#', icon: SiCsharp },
         ],
     },
     {
         domain: 'Data Science & Analysis',
         skills: [
-            'NumPy',
-            'Pandas',
-            'Matplotlib',
-            'Seaborn',
-            'Data Visualization',
-            'Data Wrangling',
-            'Web Scraping',
+            { name: 'NumPy', icon: SiNumpy },
+            { name: 'Pandas', icon: SiPandas },
+            { name: 'Matplotlib', icon: SiPowerbi },
+            { name: 'Data Cleaning', icon: FaPython },
+            { name: 'Data Augmentation', icon: FaPython },
+            { name: 'Data Wrangling', icon: FaPython },
+        ],
+    },
+    {
+        domain: 'AI/ML Frameworks & Libraries',
+        skills: [
+            { name: 'PyTorch', icon: SiPytorch },
+            { name: 'Scikit-learn', icon: SiScikitlearn },
+            { name: 'LlamaIndex', icon: FaPython },
+            { name: 'LangChain', icon: SiLangchain },
+            { name: 'CrewAI', icon: FaPython },
+        ],
+    },
+    {
+        domain: 'Natural Language Processing',
+        skills: [
+            { name: 'Retrieval Augmented Generation (RAG)', icon: FaPython },
+            { name: 'Agents', icon: FaPython },
+            { name: 'Chatbot Development', icon: FaPython },
+            { name: 'Transformers', icon: FaPython },
+            { name: 'Neural Networks', icon: FaPython },
+            { name: 'Model Fine-Tuning', icon: FaPython },
         ],
     },
     {
         domain: 'Databases',
-        skills: ['MySQL', 'PostgreSQL', 'MongoDB', 'Neo4J'],
-    },
-    {
-        domain: 'Vector Databases',
-        skills: ['Pinecone', 'Faiss', 'ChromaDB', 'Milvus'],
-    },
-    {
-        domain: 'Backend Technologies',
-        skills: ['Flask', 'Django', 'Node.js'],
-    },
-    {
-        domain: 'Frontend Technologies',
-        skills: ['JavaScript', 'HTML5', 'CSS3', 'Bootstrap', 'Tailwind'],
-    },
-    {
-        domain: 'Developer Tools & Version Control',
         skills: [
-            'Git',
-            'GitHub',
-            'Amazon Web Services (AWS)',
-            'Selenium',
-            'Puppeteer',
+            { name: 'MySQL', icon: GrMysql },
+            { name: 'PostgreSQL', icon: SiPostgresql },
+            { name: 'MongoDB', icon: SiMongodb },
+            { name: 'Neo4J', icon: SiNeo4J },
         ],
     },
     {
-        domain: 'Design Tools',
-        skills: ['Figma', 'Adobe Photoshop', 'Adobe Illustrator'],
+        domain: 'Vector Databases',
+        skills: [
+            { name: 'Elasticsearch', icon: SiElasticsearch },
+            { name: 'ChromaDB', icon: FaDatabase },
+            { name: 'Faiss', icon: SiMeta },
+            { name: 'Pinecone', icon: FaDatabase },
+        ],
+    },
+    {
+        domain: 'Backend Technologies',
+        skills: [
+            { name: 'Flask', icon: SiFlask },
+            { name: 'Django', icon: SiDjango },
+            { name: 'Fast-API', icon: SiFastapi },
+            { name: 'Node.js', icon: FaNodeJs },
+        ],
+    },
+    {
+        domain: 'Frontend Technologies',
+        skills: [
+            { name: 'ReactJS', icon: FaReact },
+            { name: 'HTML5', icon: FaHtml5 },
+            { name: 'CSS3', icon: FaCss3Alt },
+            { name: 'Tailwind CSS', icon: SiTailwindcss },
+        ],
+    },
+    {
+        domain: 'Version Control',
+        skills: [
+            { name: 'Git', icon: FaGit },
+            { name: 'GitHub', icon: SiGithub },
+            { name: 'GitLab', icon: SiGitlab },
+        ],
+    },
+    {
+        domain: 'Design & Prototyping Tools',
+        skills: [
+            { name: 'Figma', icon: FaFigma },
+            { name: 'Adobe Photoshop', icon: SiAdobephotoshop },
+            { name: 'Adobe Illustrator', icon: SiAdobeillustrator },
+            { name: 'Adobe XD', icon: SiAdobexd },
+        ],
+    },
+    {
+        domain: 'Cloud Platforms & Services',
+        skills: [
+            { name: 'Amazon Web Services (AWS)', icon: FaAws },
+            { name: 'EC2 (AWS)', icon: SiAmazonec2 },
+            { name: 'S3 Bucket (AWS)', icon: SiAmazons3 },
+            { name: 'Cloudwatch (AWS)', icon: SiAmazoncloudwatch },
+        ],
+    },
+    {
+        domain: 'Web Scraping & Automation',
+        skills: [
+            { name: 'Selenium', icon: SiSelenium },
+            { name: 'Puppeteer', icon: SiPuppeteer },
+            { name: 'BeautifulSoup4', icon: LuSoup },
+            { name: 'Playwright', icon: SiPlaywright },
+        ],
     },
     // Add more domains and skills as needed
 ];

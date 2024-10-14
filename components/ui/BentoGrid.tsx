@@ -6,7 +6,7 @@ import { BackgroundGradientAnimation } from './GradientBg';
 import { GlobeDemo } from './GridGlobe';
 import animationData from '@/data/confetti.json';
 import MagicButton from './MagicButton';
-import { allSkills } from '@/data';
+import { getAllSkills } from '@/data';
 import { Modal, ModalBody, ModalContent, ModalTrigger } from './AnimatedModal'; // Make sure this path is correct
 
 export const BentoGrid = ({
@@ -65,6 +65,8 @@ export const BentoGridItem = ({
         navigator.clipboard.writeText(text);
         setCopied(true);
     };
+
+    const allSkills = getAllSkills();
 
     return (
         <Modal>
@@ -188,11 +190,11 @@ export const BentoGridItem = ({
                         <h2 className='text-xl font-bold mb-4'>
                             My Tech Stack
                         </h2>
-                        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 auto-rows-auto'>
+                        <div className='md:flex lg:flex xl:flex flex-wrap gap-4 sm:grid'>
                             {allSkills.map((skillCategory, index) => (
                                 <div
                                     key={index}
-                                    className='bg-none bg-[#101323] p-4 rounded-xl'
+                                    className='bg-[#0d1021] rounded-lg p-4 mt-4 flex-1 min-w-[calc(50%-1rem)] sm:min-w-[calc(50%-1rem)] md:min-w-[calc(33.33%-1rem)] lg:min-w-[calc(25%-1rem)]'
                                 >
                                     <h3 className='text-lg font-semibold mb-2'>
                                         {skillCategory.domain}
@@ -202,9 +204,12 @@ export const BentoGridItem = ({
                                             (skill, skillIndex) => (
                                                 <li
                                                     key={skillIndex}
-                                                    className='text-sm mb-1'
+                                                    className='text-sm mb-1 flex items-center'
                                                 >
-                                                    {skill}
+                                                    <skill.icon className='mr-2' />
+                                                    <span className='ml-2'>
+                                                        {skill.name}
+                                                    </span>
                                                 </li>
                                             )
                                         )}
